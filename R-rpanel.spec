@@ -5,7 +5,7 @@
 Name:             R-%{packname}
 Version:          1.0_6
 Release:          1
-Summary:          Simple Interactive Controls for R Using the tcltk Package.
+Summary:          Simple Interactive Controls for R Using the tcltk Package
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
