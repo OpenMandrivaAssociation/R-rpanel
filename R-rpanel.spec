@@ -1,10 +1,10 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  rpanel
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          1.0_6
-Release:          1
+Release:          2
 Summary:          Simple Interactive Controls for R Using the tcltk Package
 Group:            Sciences/Mathematics
 License:          GPL-2
