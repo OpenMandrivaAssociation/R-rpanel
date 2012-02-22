@@ -10,17 +10,14 @@ Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-6.tar.gz
-Requires:         R-tcltk 
-%if %{with bootstrap}
-Requires:         R-tkrplot R-rgl R-sp R-geoR R-RandomFields
-%else
-Requires:         R-tkrplot R-rgl R-sp R-geoR R-RandomFields R-sm 
+Requires:         R-tcltk R-tkrplot R-rgl R-sp R-geoR R-RandomFields
+%if %{without bootstrap}
+Requires:         R-sm
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-tcltk
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-tcltk R-tkrplot R-rgl R-sp R-geoR R-RandomFields
 %if %{with bootstrap}
-BuildRequires:    R-tkrplot R-rgl R-sp R-geoR R-RandomFields
-%else
-BuildRequires:    R-tkrplot R-rgl R-sp R-geoR R-RandomFields R-sm 
+BuildRequires:    R-sm
 %endif
 
 %description
