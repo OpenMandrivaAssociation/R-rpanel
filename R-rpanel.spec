@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.0_6
-Release:          3
+Version:          1.1.2
+Release:          1
 Summary:          Simple Interactive Controls for R Using the tcltk Package
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-6.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/rpanel_1.1-2.tar.gz
 Requires:         R-tcltk R-tkrplot R-rgl R-sp R-geoR R-RandomFields
 %if %{without bootstrap}
 Requires:         R-sm
@@ -57,3 +57,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/images
+
