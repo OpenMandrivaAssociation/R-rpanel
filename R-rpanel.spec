@@ -8,7 +8,7 @@ Release:          3
 Summary:          Simple Interactive Controls for R Using the tcltk Package
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.0-6.tar.gz
 Requires:         R-tcltk R-tkrplot R-rgl R-sp R-geoR R-RandomFields
 %if %{without bootstrap}
